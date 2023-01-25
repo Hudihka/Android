@@ -1,12 +1,12 @@
 package com.example.hudihka.english.models
 
-class ListWords(json: Map<String, String> ) {
+class ListWords(json: Map<String, Any> ) {
     val number: Int
     val description: String
-    val words: List<Word>
+    var words: Array<Word>
 
     init {
-        this.number = json["number"]?.toInt()?:0
+        this.number = json["number"] as Int
         this.description = json["description"].toString()
 
         val arrays: Array<Map<String, String>> = json["array"] as Array<Map<String, String>>
@@ -14,8 +14,8 @@ class ListWords(json: Map<String, String> ) {
     }
 
     companion object {
-        fun generateListsWords(json: Array<Map<String, String>>): List<ListWords> {
-            return json.map { ListWords(it) }.sortedBy { it.number < it.number }
+        fun generateListsWords(json: Array<Map<String, Any>>): Array<ListWords> {
+            return json.map { ListWords(it) }.sortedBy { it.number < it.number }.toTypedArray()
         }
     }
 }

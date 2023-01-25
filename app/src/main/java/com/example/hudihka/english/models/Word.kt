@@ -21,8 +21,8 @@ class Word(json: Map<String, String> ) {
     }
 
     companion object {
-        fun generateArray(json: Array<Map<String, String>>): List<Word> {
-            return json.map { Word(it) }.sortedBy { it.form1 < it.form1 }
+        fun generateArray(json: Array<Map<String, String>>): Array<Word> {
+            return json.map { Word(it) }.sortedBy { it.form1 < it.form1 }.toTypedArray()
         }
     }
 }
