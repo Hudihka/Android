@@ -1,8 +1,10 @@
 package com.example.hudihka.english.models
 
+typealias JSON = Map<String, Any>
+typealias ArrayJSON = Array<Map<String, Any>>
 class СontentJSON {
     companion object {
-        val contentJSON: Array<Map<String, Any>> = arrayOf(
+        val contentJSON: ArrayJSON = arrayOf(
             mapOf(
                 "number" to 1,
                 "description" to "Все повторяются",

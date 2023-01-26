@@ -1,6 +1,6 @@
 package com.example.hudihka.english.models
 
-class ListWords(json: Map<String, Any> ) {
+class ListWords(json: JSON ) {
     val number: Int
     val description: String
     var words: Array<Word>
@@ -14,7 +14,7 @@ class ListWords(json: Map<String, Any> ) {
     }
 
     companion object {
-        fun generateListsWords(json: Array<Map<String, Any>>): Array<ListWords> {
+        fun generateListsWords(json: ArrayJSON): Array<ListWords> {
             return json.map { ListWords(it) }.sortedBy { it.number < it.number }.toTypedArray()
         }
     }

@@ -1,7 +1,7 @@
 package com.example.hudihka.english.models
 import kotlin.collections.List
 
-class Word(json: Map<String, String> ) {
+class Word(json: JSON ) {
     val trans: String
     val form1: String
     val form2: String
