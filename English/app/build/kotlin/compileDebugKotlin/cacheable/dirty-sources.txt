@@ -1,0 +1,8 @@
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/Words/WordsEndpoint.kt
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/models/ListWords.kt
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/Words/WordsInterface.kt
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/Words/WordsViewModel.kt
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/MainActivity.kt
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/DataProvider/DataProvider.kt
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/models/Word.kt
+/Users/hudihka/Desktop/Android/app/src/main/java/com/example/hudihka/english/models/СontentJSON.kt
