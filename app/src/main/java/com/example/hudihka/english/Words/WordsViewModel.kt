@@ -11,15 +11,15 @@ class WordsViewModel: ViewModel(), WordsInterfaceIn, WordsInterfaceOut {
     private val dataProvider = DataProvider()
 
     override var segmentIndex: (Int) -> Unit = {  }
-    override var switchValue: (Boolean) -> Void = { _ }
-    override var arrayLists: (Array<ListWords>) -> Void = { _ }
+    override var switchValue: (Boolean) -> Unit = {  }
+    override var arrayLists: (Array<ListWords>) -> Unit = {  }
 
     override fun tapedFavorit(word: Word) {
 
         ///
         //
         //
-        \
+
         segmentIndex(10)
     }
 

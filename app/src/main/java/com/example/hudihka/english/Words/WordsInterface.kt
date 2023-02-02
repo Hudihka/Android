@@ -13,6 +13,6 @@ interface WordsInterfaceIn {
 
 interface WordsInterfaceOut {
     var segmentIndex: (Int) -> Unit
-    var switchValue: (Boolean) -> Void
-    var arrayLists: (Array<ListWords>) -> Void
+    var switchValue: (Boolean) -> Unit
+    var arrayLists: (Array<ListWords>) -> Unit
 }

@@ -19,17 +19,17 @@ class DataProvider {
         var b: Int? = 5
         b = null
 
-        let d = b ?? 8
-
-        b?.let {
-            println(it)
-        }?: run { b = 10 }
-
-        var a = [5, 6, 7]
-
-        let index = a.firstIndex({ $0 == 6 }) {
-
-        }
+//        let d = b ?? 8
+//
+//        b?.let {
+//            println(it)
+//        }?: run { b = 10 }
+//
+//        var a = [5, 6, 7]
+//
+//        let index = a.firstIndex({ $0 == 6 }) {
+//
+//        }
 
         allLists.forEachIndexed { indexList, list ->
             val indexWord = list.words.indexOfFirst { it.key == word.key }
